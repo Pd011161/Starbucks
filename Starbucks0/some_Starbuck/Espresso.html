@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-ch1.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/8d457a3bc8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Starbucks Menu</title>
+  </head>
+  <body>
+    <div>
+      <header>
+        <a href="#"><img src="img/logo.png" class="logo" /></a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+          <li><a href="Starbucks.html">Home</a></li>
+          <li><a href="menu-hot.html">Menu</a></li>
+          <li>
+            <a href="shop.html"
+              ><i class="fa-solid fa-bag-shopping cart"></i
+            ></a>
+          </li>
+          <li><a href="contract.html">Author</a></li>
+        </ul>
+      </header>
+
+      <div id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+          <img src="img/ch2.jpg" width="100%" id="MainImg" alt="" />
+        </div>
+
+        <div class="single-pro-detials ten">
+          <h6>Hot Drinks</h6>
+          <h4>Espresso</h4>
+          <h2>$3</h2>
+          <lable for="sz">Size</lable>
+          <select name="sz">
+            <option value="">Select Size</option>
+            <option value="">Short</option>
+            <option value="">Tall</option>
+            <option value="">Grande</option>
+            <option value="">Venti</option>
+          </select>
+          <br />
+          <lable for="vl">Volume</labl>
+          <input type="number" name="vl" min="1" max="10" value="1" />
+          <button class="normal"><a href="menu-hot.html">Add to Cart</a></button>
+          <h4>Product Details</h4>
+          <span>
+            Is a coffee-brewing method of Italian origin,[1] in which a small
+            amount of nearly boiling water (about 90 °C or 190 °F) is forced
+            under 9–10 bars (900–1,000 kPa; 130–150 psi) of pressure through
+            finely-ground coffee beans. Espresso coffee can be made with a wide
+            variety of coffee beans and roast degrees.s generally thicker than
+            coffee brewed by other methods, with a viscosity similar to that of
+            warm honey. This is due to the higher concentration of suspended and
+            dissolved solids, and the crema on top (a foam with a creamy
+            consistency). As a result of the pressurized brewing process, the
+            flavors and chemicals in a typical cup of espresso are very
+            concentrated. Espresso has more caffeine per unit volume than most
+            coffee beverages.
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div id="product1" class="section-p1 ptw">
+      <div class="rec"><h2>Recommend</h2></div>
+      <div class="pro-container">
+        <div class="pro">
+          <img src="img/ch1.jpg" />
+          <div class="des ten">
+            <span>Caffe' Americano</span>
+            <h5>Hot</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$3</h4>
+          </div>
+          <a href="Caffe-Americano.html"
+            ><i class="fa-solid fa-bag-shopping cart"></i
+          ></a>
+        </div>
+
+        <div class="pro">
+          <img src="img/ch3.jpg" />
+          <div class="des ten">
+            <span>Espresso Macchiato</span>
+            <h5>Hot</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$3</h4>
+          </div>
+          <a href="Espresso Macchiato.html"
+            ><i class="fa-solid fa-bag-shopping cart"></i
+          ></a>
+        </div>
+
+        <div class="pro">
+          <img src="img/ch10.jpg" />
+          <div class="des tentwo">
+            <span>Caramel Macchiato</span>
+            <h5>Hot</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$4.3</h4>
+          </div>
+          <a href="Caramel Macchiato.html"
+            ><i class="fa-solid fa-bag-shopping cart"></i
+          ></a>
+        </div>
+
+        <div class="pro">
+          <img src="img/ch11.jpg" />
+          <div class="des tenfive">
+            <span>White Chocolate Mocha</span>
+            <h5>Hot</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$4.3</h4>
+          </div>
+          <a href="White Chocolate Mocha.html"
+            ><i class="fa-solid fa-bag-shopping cart"></i
+          ></a>
+        </div>
+
+        <div id="banner">
+          <h4>Promotion</h4>
+          <h2>
+            Up to <span> 20% Off</span> - All Hot drink on<span> Friday</span>
+          </h2>
+          <button><a href="menu-hot.html">Explore More</a></button>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".starbucks").src = anything;
+      }
+
+      function changeCircleColor(color) {
+        const circle = document.querySelector(".circle");
+        circle.style.background = color;
+      }
+
+      function changeSciColor(color) {
+        const sci = document.querySelector(".sci");
+        sci.style.background = color;
+      }
+
+      function toggleMenu() {
+        var menuToggle = document.querySelector(".toggle");
+        var navigation = document.querySelector(".navigation");
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

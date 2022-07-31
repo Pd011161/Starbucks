@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-contact.css" />
+    <script src="https://kit.fontawesome.com/8d457a3bc8.js" crossorigin="anonymous"></script>
+    <title>Website Responsive Starbucks 04/06/2022 Author</title>
+  </head>
+  <body>
+
+      <header>
+        <a href="#"><img src="img/logo.png" class="logo" /></a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+          <li><a href="Starbucks.html">Home</a></li>
+          <li><a href="menu-hot.html">Menu</a></li>
+          <li><a href="shop.html"><i class="fa-solid fa-bag-shopping cart"></i></a></li>
+          <li><a href="contract.html" id="ct">Author</a></li>
+        </ul>
+      </header>
+
+        <div class="text">PDev</div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img/imgPd.JPG">
+                </div>
+                <div class="content">
+                    <div class="details">
+    
+                        <h2>Predee Chaiyakit
+                            <br>
+                            <span>
+                                Senior Developer
+                            </span>
+                        </h2>
+    
+                        <div class="data">
+                            <h3>169<br><span>Experience</span></h3>
+                            <h3>2<br><span>Project</span></h3>
+                            <h3>21<br><span>Age</span></h3>
+                        </div>
+    
+                        <div class="Btn">
+                            <button><a href="https://www.instagram.com/pdev_official/">Follow</a></button>
+                            <button><a href="https://line.me/ti/p/MrFuA62DEJ/">Message</a></button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".starbucks").src = anything;
+      }
+
+      function changeCircleColor(color) {
+        const circle = document.querySelector(".circle");
+        circle.style.background = color;
+      }
+
+      function changeSciColor(color) {
+        const sci = document.querySelector(".sci");
+        sci.style.background = color;
+      }
+
+      function toggleMenu() {
+        var menuToggle = document.querySelector(".toggle");
+        var navigation = document.querySelector(".navigation");
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

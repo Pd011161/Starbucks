@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-ch1.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/8d457a3bc8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Starbucks Menu</title>
+  </head>
+  <body>
+    <div>
+      <header>
+        <a href="#"><img src="img/logo.png" class="logo" /></a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+          <li><a href="Starbucks.html">Home</a></li>
+          <li><a href="menu-hot.html">Menu</a></li>
+          <li>
+            <a href="shop.html"
+              ><i class="fa-solid fa-bag-shopping cart"></i
+            ></a>
+          </li>
+          <li><a href="contract.html">Author</a></li>
+        </ul>
+      </header>
+
+      <div id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+          <img src="img/cc12.jpg" width="100%" id="MainImg" alt="" />
+        </div>
+
+        <div class="single-pro-detials ten">
+          <h6>Cold drinks</h6>
+          <h4>Iced Caffe' Mocha</h4>
+          <h2>$4</h2>
+          <lable for="sz">Size</lable>
+          <select name="sz">
+            <option value="">Select Size</option>
+            <option value="">Short</option>
+            <option value="">Tall</option>
+            <option value="">Grande</option>
+            <option value="">Venti</option>
+          </select>
+          <br />
+          <lable for="vl">Volume</lable>
+          <input type="number" name="vl" min="1" max="10" value="1" />
+          <button class="normal">Add to Cart</button>
+          <h4>Product Details</h4>
+          <span>
+            Is a chocolate-flavoured warm beverage that is a variant of a café
+            latte (Italian: [kafˈfɛ lˈlatte]),[1] commonly served in a glass
+            rather than a mug. Other commonly used spellings are mochaccino[2]
+            and also mochachino. The name is derived from the city of Mocha,
+            Yemen, which was one of the centres of early coffee trade.[3] Like
+            latte, the name is commonly shortened to just mocha.Like café latte,
+            caffè mocha is based on espresso and hot milk but with added
+            chocolate flavouring and sweetener, typically in the form of cocoa
+            powder and sugar. Many varieties use chocolate syrup instead, and
+            some may contain dark or milk chocolate.Caffè mocha, in its most
+            basic formulation, can also be referred to as hot chocolate with
+            (e.g., a shot of) espresso added. Like cappuccino.
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div id="product1" class="section-p1 ptw">
+      <div class="rec"><h2>Recommend</h2></div>
+      <div class="pro-container">
+      <div class="pro">
+          <img src="img/cc1.jpg">
+          <div class="des tenfive">
+              <span>Iced Caffe' Americano</span>
+              <h5>Cold</h5>
+              <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              <h4>$3.3</h4>
+          </div>
+          <a href="Iced Caffe' Americano.html"><i class="fa-solid fa-bag-shopping cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="img/cc2.jpg">
+        <div class="des tenseven">
+            <span>Cold Foam Iced Espresso</span>
+            <h5>Cold</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$4</h4>
+        </div>
+        <a href="Cold Foam Iced Espresso.html"><i class="fa-solid fa-bag-shopping cart"></i></a>
+    </div>
+
+      <div class="pro">
+          <img src="img/cc6.jpg">
+          <div class="des tenseven">
+              <span>Iced Cappuccino</span>
+              <h5>Cold</h5>
+              <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              <h4>$3.6</h4>
+          </div>
+          <a href="Iced Cappuccino.html"><i class="fa-solid fa-bag-shopping cart"></i></a>
+      </div>
+
+      <div class="pro">
+          <img src="img/cc11.jpg">
+          <div class="des twoten">
+              <span>Iced White Chocolate Mocha</span>
+              <h5>Cold</h5>
+              <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              <h4>$4.3</h4>
+          </div>
+          <a href="Iced White Chocolate Mocha.html"><i class="fa-solid fa-bag-shopping cart"></i></a>
+      </div>
+
+        <div id="banner">
+          <h4>Promotion</h4>
+          <h2>
+            Up to <span> 10% Off</span> - All Cold drink on<span> Monday</span>
+          </h2>
+          <button><a href="menu-cold.html">Explore More</a></button>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".starbucks").src = anything;
+      }
+
+      function changeCircleColor(color) {
+        const circle = document.querySelector(".circle");
+        circle.style.background = color;
+      }
+
+      function changeSciColor(color) {
+        const sci = document.querySelector(".sci");
+        sci.style.background = color;
+      }
+
+      function toggleMenu() {
+        var menuToggle = document.querySelector(".toggle");
+        var navigation = document.querySelector(".navigation");
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/8d457a3bc8.js" crossorigin="anonymous"></script>
+    <title>Responsive Starbucks 04/06/2022</title>
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#"><img src="img/logo.png" class="logo" /></a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+          <li><a href="Starbucks.html">Home</a></li>
+          <li><a href="menu-hot.html">Menu</a></li>
+          <li><a href="shop.html"><i class="fa-solid fa-bag-shopping cart"></i></a></li>
+          <li><a href="contract.html">Author</a></li>
+        </ul>
+      </header>
+      
+      <div class="content">
+        <div class="textBox">
+          <h2>It's not just Coffee<br />It's <span>Starbucks</span></h2>
+          <p>
+            is an American multinational chain of coffeehouses and roastery
+            reserves headquartered in Seattle, Washington. It is the world's
+            largest coffeehouse chain. As of November 2021, the company had
+            33,833 stores in 80 countries.
+          </p>
+          <a href="menu-hot.html">Learn More</a>
+        </div>
+        <div class="imgBox">
+          <img src="img/img1.png" class="starbucks" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li>
+          <img
+            src="img/thumb1.png"
+            onclick="imgSlider('img/img1.png');changeCircleColor('#017143');changeSciColor('#017143')"
+          />
+        </li>
+        <li>
+          <img
+            src="img/thumb2.png"
+            onclick="imgSlider('img/img2.png');changeCircleColor('#eb7495');changeSciColor('#eb7495')"
+          />
+        </li>
+        <li>
+          <img
+            src="img/thumb3.png"
+            onclick="imgSlider('img/img3.png');changeCircleColor('#d752b1');changeSciColor('#d752b1')"
+          />
+        </li>
+      </ul>
+      <ul class="sci">
+        <li>
+          <a href="https://th-th.facebook.com/StarbucksThailand/"><img src="img/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/starbucks"><img src="img/twitter.png" /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/starbucksthailand/"><img src="img/instagram.png" /></a>
+        </li>
+      </ul>
+    </section>
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".starbucks").src = anything;
+      }
+
+      function changeCircleColor(color) {
+        const circle = document.querySelector(".circle");
+        circle.style.background = color;
+      }
+
+      function changeSciColor(color) {
+        const sci = document.querySelector(".sci");
+        sci.style.background = color;
+      }
+
+      function toggleMenu() {
+        var menuToggle = document.querySelector(".toggle");
+        var navigation = document.querySelector(".navigation");
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
